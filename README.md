@@ -6,7 +6,7 @@ A json file, containing very little data, and a png of the visual we want this c
 
 ## Requirements
 
-What we are looking for is a single page "app" that displays years and vehicle models in a grid format.
+What we are looking for is a responsive single page "app" that displays years and vehicle models in a grid format.
 We want a grid with the contents of "years" as the header, and "vehicle-models" as the first column.
 On page load, we want the corresponding box to be blue (as in the mockup.png) if the entry for that vehicle model and year exists in the "coverage" segment of the json. And grey if it doesn't exist.
 We also want that if we click on a vehicle-model/year box, it is toggled (removes the entry from the javascript "coverage" object if it previously existed or adds it if it did not...) and the visual displays the new state.
