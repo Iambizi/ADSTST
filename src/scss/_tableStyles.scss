@@ -1,0 +1,54 @@
+// This file is only an example. Please delete it before you submit your test.
+body {
+  font-family: monospace;
+  background: #fff;
+  color: darkgrey;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table{
+  color: #000;
+  border-spacing: 10px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  thead{
+    vertical-align: bottom;
+    .logo{
+      background-color: #e4e4e4;;
+      // background: url("https://png.pngitem.com/pimgs/s/583-5839068_johns-hopkins-logo-white-hd-png-download.png");
+      // background-repeat: no-repeat;
+      // background-size: contain;
+      // background-position: center;
+    }
+    .year{
+      background-color: #f5f5f6;
+      border: 1px solid #f5f5f6;
+      margin-bottom: 5px;
+      height: 100px;
+      text-align: end;
+      border-collapse: separate;
+      border-spacing: 10px;
+      writing-mode: vertical-rl;
+      // vertical-align: bottom;
+    }
+  }
+  tbody{
+    tr{
+      .model{
+        background-color: #e4e4e4;
+        width: 300px;
+        padding-left: 5px;
+      }
+      td.coverage{
+        background-color: #e4e4e4;
+        &.in{
+          background-color: #2770BD;
+        }
+      }
+    }
+  }
+}
