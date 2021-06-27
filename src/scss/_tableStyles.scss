@@ -1,32 +1,26 @@
-// This file is only an example. Please delete it before you submit your test.
-body {
-  font-family: monospace;
-  background: #fff;
-  color: darkgrey;
-  -webkit-font-smoothing: antialiased;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "_variables.scss";
 
 table{
   color: #000;
   border-spacing: 10px;
-  padding: 5px;
+  padding: 10px;
   font-size: 15px;
   font-family: 'Roboto Condensed', sans-serif;
+  border: 1px solid $tableBorder;
   thead{
     vertical-align: bottom;
     .logo{
-      background-color: #e4e4e4;;
-      // background: url("https://png.pngitem.com/pimgs/s/583-5839068_johns-hopkins-logo-white-hd-png-download.png");
-      // background-repeat: no-repeat;
-      // background-size: contain;
-      // background-position: center;
+      background-color: $darkgreyCol;
+      // background: url(../images/logo.png);
+      background-repeat: no-repeat;
+      color: $darkgreyCol;
+      max-width: 306px;
+      background-size: contain;
+      background-position: center;
     }
     .year{
-      background-color: #f5f5f6;
-      border: 1px solid #f5f5f6;
+      background-color: $lightgreyRow;
+      border: 1px solid $lightgreyRow;
       margin-bottom: 5px;
       height: 100px;
       text-align: end;
@@ -39,14 +33,14 @@ table{
   tbody{
     tr{
       .model{
-        background-color: #e4e4e4;
+        background-color: $darkgreyCol;
         width: 300px;
         padding-left: 5px;
       }
       td.coverage{
-        background-color: #e4e4e4;
+        background-color: $darkgreyCol;
         &.in{
-          background-color: #2770BD;
+          background-color: $cellCovered;
         }
       }
     }
