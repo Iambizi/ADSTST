@@ -44,6 +44,10 @@ table{
         cursor: default;
       } 
       span{
+        -ms-writing-mode: vertical-rl;
+        -webkit-writing-mode: vertical-rl;
+        -moz-writing-mode: vertical-rl;
+        -ms-writing-mode: vertical-rl;
         writing-mode: vertical-rl;
         transform: rotate(-180deg);
         padding-top: 3px;

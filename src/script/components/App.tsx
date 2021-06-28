@@ -46,7 +46,6 @@ export const App: React.FC<dataProps> = () => {
 
     // function that toggles cell on click, updates coverage data and updates UI
     const updateCoverage = (e) =>{
-        
         const cellYear = e.target.getAttribute("data-coverage");
         const cellModel = e.target.parentElement.getAttribute("data-model");
         const modelCoverage = coverage[cellModel];
