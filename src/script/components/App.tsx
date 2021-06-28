@@ -4,7 +4,19 @@ import coverageData from "../../data/coverage.json";
 
 
 type dataProps = {
-    data: string[];
+    data: {
+    ["vehicle-models"]: string[],
+    years: number[],
+    coverage: {
+        ILX: number[],
+        MDX: number[],
+        RDX: number[],
+        RLX: number[],
+        TL: number[],
+        TLX: number[],
+        TSX: number[]
+    }
+    }
 }
 
 export const App: React.FC<dataProps> = () => {
@@ -72,7 +84,7 @@ export const App: React.FC<dataProps> = () => {
             <table>
                 <thead>
                     <tr>
-                        <th><td className="logo"></td></th>
+                        <th><div className="logo"></div></th>
                         {data.years.map((year, i)=>(
                             <td data-year={`${years[i]}`} className="year" key={i}><span>{years[i]}</span></td>
                             )
