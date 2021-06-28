@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { useEffect, useState } from "react";
-import coverageData from '../../data/coverage.json';
+import coverageData from "../../data/coverage.json";
 
 
-type dataProps ={
+type dataProps = {
     data: string[];
 }
 
@@ -72,9 +72,9 @@ export const App: React.FC<dataProps> = () => {
             <table>
                 <thead>
                     <tr>
-                        <th className="logo"><img src={"../../images/logo.png"} alt="logo"/></th>
+                        <th className="logo"></th>
                         {data.years.map((year, i)=>(
-                            <td data-year={`${years[i]}`} className="year" key={i}>{years[i]}</td>
+                            <td data-year={`${years[i]}`} className="year" key={i}><span>{years[i]}</span></td>
                             )
                         )}
                     </tr>
