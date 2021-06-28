@@ -72,7 +72,7 @@ export const App: React.FC<dataProps> = () => {
             <table>
                 <thead>
                     <tr>
-                        <th className="logo"></th>
+                        <th><td className="logo"></td></th>
                         {data.years.map((year, i)=>(
                             <td data-year={`${years[i]}`} className="year" key={i}><span>{years[i]}</span></td>
                             )

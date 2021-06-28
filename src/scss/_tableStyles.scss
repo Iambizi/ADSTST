@@ -14,15 +14,19 @@ table{
   // }
   thead{
       vertical-align: bottom;
-    .logo{
-      // background-color: $darkgreyCol;
-      background: url(../images/logo.png);
-      background-repeat: repeat;
-      color: $darkgreyCol;
-      max-width: 306px;
-      max-height: 104px;
-      background-size: contain;
-      background-position: center;
+    th{
+      background-color: $lightgreyRow;
+      width: 100%;
+      height: 100%;
+      .logo{
+        background: url(../images/logo.png);
+        background-repeat: no-repeat;
+        color: $darkgreyCol;
+        width: 306px;
+        height: 102px;
+        background-size: contain;
+        background-position: center;
+      }
     }
     .year{
       background-color: $lightgreyRow;
@@ -39,6 +43,7 @@ table{
       span{
         writing-mode: vertical-rl;
         transform: rotate(-180deg);
+        padding-top: 3px;
       }
       @media only screen and (max-width: 760px) {
         width: 50px;
